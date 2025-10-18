@@ -1,0 +1,344 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #191919;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header, footer {
+    background-color: #204e8f;
+    color: #fff;
+    padding: 1rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+footer {
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 5vw, 2.5rem); /* Responsive font size */
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    opacity: 0.8;
+}
+
+main {
+    transition: margin-left 0.5s;
+    padding: 1rem;
+    background: linear-gradient(135deg, #2c3e50, #3a5f7a);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color:#2c3e50;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 60px;
+}
+
+.sidenav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.sidenav ul li {
+    margin: 0.5rem 0;
+}
+
+.sidenav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidenav ul li a:hover,
+.sidenav ul li a:focus {
+    background-color: #1565C0;
+    outline: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidenav .closebtn:focus {
+    outline: 2px solid #fff; 
+}
+
+.openbtn {
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: #1976D2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.openbtn:hover,
+.openbtn:focus {
+    background-color: #1565C0;
+    outline: none;
+}
+
+.movie-section {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.movie-section h2 {
+    color: #FFD700;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #FFD700;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.movie-section p {
+    margin: 0.5rem 0 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    color: #ddd;
+    text-align: center;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 200px));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.movie-card {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.movie-card:hover,
+.movie-card:focus-within {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #333;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+}
+
+.movie-title h3 {
+    color: #fff;
+}
+
+.overview {
+    background-color: #fff;
+    color: 000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie-card:hover .overview{
+    transform: translateY(0);
+}
+
+.overview h3 {
+        margin-bottom: 0;
+}
+
+.overview p {
+    color: #000;
+    padding: 0.5rem;
+    margin-top: 0;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollToTopBtn:hover,
+#scrollToTopBtn:focus {
+    background-color: #1565C0;
+    box-shadow: 0 6px 15px rgba(21, 101, 192, 0.4);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+#scrollToTopBtn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 180px));
+    }
+
+    .movie-card {
+        max-width: 180px;
+    }
+
+    .movie-section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    header p {
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 160px));
+        gap: 1rem;
+    }
+
+    .movie-card {
+        max-width: 160px;
+        min-height: 250px;
+    }
+
+    .movie-card p {
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+
+    .openbtn {
+        top: 10px;
+        left: 10px;
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+
+    .sidenav {
+        padding-top: 50px;
+    }
+
+    .sidenav .closebtn {
+        font-size: 30px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+    }
+
+    header p {
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 140px));
+        gap: 0.75rem;
+    }
+
+    .movie-card {
+        max-width: 140px;
+        min-height: 200px;
+    }
+
+    .movie-card img {
+        aspect-ratio: 3/4;
+    }
+
+    .movie-section h2 {
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+    }
+
+    #scrollToTopBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    #scrollToTopBtn svg {
+        width: 20px;
+        height: 20px;
+    }
+}
