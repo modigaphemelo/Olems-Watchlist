@@ -176,34 +176,39 @@ main {
     aspect-ratio: 2/3;
 }
 
-.movie-title h3 {
-    color: #fff;
-}
-
 .overview {
-    background-color: #fff;
+    background-color: #fff; 
     color: 000;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
     right: 0;
-    max-height: 100%;
+    height: 100%;
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
 }
 
-.movie-card:hover .overview{
+.movie-card:hover .overview,
+.movie-card:focus-within .overview {
     transform: translateY(0);
 }
 
 .overview h3 {
-        margin-bottom: 0;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    width: 100%;
 }
 
 .overview p {
-    color: #000;
+    margin: 0;
     padding: 0.5rem;
-    margin-top: 0;
+    color: #000;
 }
 
 #scrollToTopBtn {
@@ -341,4 +346,54 @@ main {
         width: 20px;
         height: 20px;
     }
+}
+
+.rating-1 {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.rating-2 {
+    background-color: #FF3300;
+    color: #FFFFFF;
+}
+
+.rating-3 {
+    background-color: #FF6600;
+    color: #FFFFFF;
+}
+
+.rating-4 {
+    background-color: #FF9900;
+    color: #000000;
+}
+
+.rating-5 {
+    background-color: #FFCC00;
+    color: #000000;
+}
+
+.rating-6 {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+.rating-7 {
+    background-color: #CCFF00;
+    color: #000000;
+}
+
+.rating-8 {
+    background-color: #99FF00;
+    color: #000000;
+}
+
+.rating-9 {
+    background-color: #66FF00;
+    color: #000000;
+}
+
+.rating-10 {
+    background-color: #FFD700;
+    color: #000000;
 }
