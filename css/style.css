@@ -68,6 +68,10 @@ main {
     margin: 0.5rem 0;
 }
 
+.sidenav ul li:last-child {
+    margin-bottom: 5rem;
+}
+
 .sidenav ul li a {
     color: #FFD700;
     text-decoration: none;
