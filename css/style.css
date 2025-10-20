@@ -28,6 +28,7 @@ header h1 {
 header p {
     margin: 0.5rem 0 0;
     opacity: 0.8;
+    color: #FFD700;
 }
 
 main {
