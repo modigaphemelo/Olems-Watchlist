@@ -32,7 +32,7 @@ A website showcasing my personal watchlist of movies, organized by genres and th
 - [x] Apocalyptic	18
 - [ ] Music & Dance	18
 - [ ] Christmas & Family	17
-- [ ] XXX	17
+- [ ] Provocative & controversial	17
 - [ ] Financial	14
 - [ ] Crime - Serial Killer	15
 - [ ] Literature	12
