@@ -3,6 +3,7 @@ A website showcasing my personal watchlist of movies, organized by genres and th
 
 ## Progress Tracker
 
+- [x] My Top 100 Favourite Movies
 - [ ] African	132
 - [ ] Animation	109
 - [ ] Crime	95
