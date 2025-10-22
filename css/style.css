@@ -46,6 +46,7 @@ main {
 
 .sidenav {
     height: 100%;
+    min-height: 100vh;
     width: 0;
     position: fixed;
     z-index: 2;
@@ -68,16 +69,16 @@ main {
     margin: 0.5rem 0;
 }
 
-.sidenav ul li:last-child {
-    margin-bottom: 5rem;
-}
-
 .sidenav ul li a {
     color: #FFD700;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
     transition: background-color 0.3s;
+}
+
+.sidenav ul li:last-child {
+    margin-bottom: 5rem;
 }
 
 .sidenav ul li a:hover,
@@ -159,8 +160,8 @@ main {
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 200px;
     width: 100%;
     position: relative;
@@ -354,51 +355,51 @@ main {
 }
 
 .rating-1 {
-    background-color: #FF0000;
+    background-color: #DC2626;  /* Deep red */
     color: #FFFFFF;
 }
 
 .rating-2 {
-    background-color: #FF3300;
+    background-color: #EF4444;  /* Bright red */
     color: #FFFFFF;
 }
 
 .rating-3 {
-    background-color: #FF6600;
+    background-color: #F87171;  /* Light red */
     color: #FFFFFF;
 }
 
 .rating-4 {
-    background-color: #FF9900;
-    color: #000000;
+    background-color: #F97316;  /* Orange red */
+    color: #FFFFFF;
 }
 
 .rating-5 {
-    background-color: #FFCC00;
+    background-color: #F59E0B;  /* Amber */
     color: #000000;
 }
 
 .rating-6 {
-    background-color: #FFFF00;
+    background-color: #EAB308;  /* Yellow */
     color: #000000;
 }
 
 .rating-7 {
-    background-color: #CCFF00;
+    background-color: #84CC16;  /* Lime green */
     color: #000000;
 }
 
 .rating-8 {
-    background-color: #99FF00;
+    background-color: #4ADE80;  /* Emerald green */
     color: #000000;
 }
 
 .rating-9 {
-    background-color: #66FF00;
+    background-color: #22C55E;  /* Medium green */
     color: #000000;
 }
 
 .rating-10 {
-    background-color: #FFD700;
-    color: #000000;
+    background-color: #16A34A;  /* Deep green */
+    color: #FFFFFF;
 }
