@@ -14,18 +14,18 @@ A website showcasing my personal watchlist of movies, organized by genres and th
 - [x] Sci-Fi - Heroes & Villains	72
 - [ ] Fantasy & Adventure	72
 - [ ] Relationships	69
-- [ ] Sci-Fi	68
+- [x] Sci-Fi	69
 - [ ] Sports	50
 - [ ] Action - Spy Film	46
 - [ ] Sci-Fi - Monsters & Aliens	47
-- [ ] Black Lives	39
+- [x] Black Lives	39
 - [ ] War & Soldiers	39
 - [ ] Drama	34
 - [x] Religion & Mythology	33
 - [x] Action - Assassins	31
 - [ ] Sci-Fi - AI & Machines	31
 - [x] Crime - Heists	30
-- [ ] Historical & Biographical	32
+- [x] Historical & Biographical	32
 - [x] Documentary	26
 - [ ] Comedy - Stand-up	23
 - [ ] Series Film	20
