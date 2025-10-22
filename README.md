@@ -4,14 +4,14 @@ A website showcasing my personal watchlist of movies, organized by genres and th
 ## Progress Tracker
 
 - [x] My Top 100 Favourite Movies
-- [ ] African	132
-- [ ] Animation	109
+- [x] African	132
+- [x] Animation	109
 - [ ] Crime	95
 - [ ] Comedy	90
 - [ ] Action	85
-- [ ] Martial Arts & Chinese	77
+- [x] Martial Arts 77
 - [ ] Horror	78
-- [ ] Sci-Fi - Heroes & Villains	72
+- [x] Sci-Fi - Heroes & Villains	72
 - [ ] Fantasy & Adventure	72
 - [ ] Relationships	69
 - [ ] Sci-Fi	68
@@ -21,20 +21,20 @@ A website showcasing my personal watchlist of movies, organized by genres and th
 - [ ] Black Lives	39
 - [ ] War & Soldiers	39
 - [ ] Drama	34
-- [ ] Religion & Mythology	33
-- [ ] Action - Assassins	31
+- [x] Religion & Mythology	33
+- [x] Action - Assassins	31
 - [ ] Sci-Fi - AI & Machines	31
-- [ ] Crime - Heists	30
+- [x] Crime - Heists	30
 - [ ] Historical & Biographical	32
-- [ ] Documentary	26
+- [x] Documentary	26
 - [ ] Comedy - Stand-up	23
 - [ ] Series Film	20
 - [x] Apocalyptic	18
 - [ ] Music & Dance	18
 - [ ] Christmas & Family	17
-- [ ] Provocative & controversial	17
-- [ ] Financial	14
+- [x] Provocative & controversial	17
+- [x] Financial	14
 - [ ] Crime - Serial Killer	15
 - [ ] Literature	12
 - [ ] Computers	10
-- [ ] Crime - Computer Crimes	9
+- [x] Crime - Computer Crimes	9
