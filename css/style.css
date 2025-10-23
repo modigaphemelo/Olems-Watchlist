@@ -112,6 +112,7 @@ main {
     left: 20px;
     z-index: 1;
     transition: background-color 0.3s;
+    border-radius: 6px;
 }
 
 .openbtn:hover,
